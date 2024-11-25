@@ -37,6 +37,10 @@ class MainActivity : ComponentActivity() {
                     composable("home") {
                         HomeScreen(functionality, dataModel)
                     }
+                    // navigation to profile page
+                    composable("createProfile"){
+                        CreateProfileScreen(functionality, dataModel)
+                    }
                 }
             }
         }
