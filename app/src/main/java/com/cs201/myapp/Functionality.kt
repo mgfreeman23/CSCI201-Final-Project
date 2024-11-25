@@ -14,6 +14,19 @@ class Functionality {
 
     }
 
+    fun saveProfile(
+        name: String,
+        age: Int,
+        major: String,
+        hometown: String,
+        hobbies: List<String>,
+        socialMedia: String
+    ) {
+        dataModel.addUserProfile(name,age,major,hometown,hobbies,socialMedia)
+        // add server communication here later!!
+
+    }
+
     /*
     This function will be called when the app is closed
     Anything that needs to be closed when the app is closed, such as any parallel threads, should be done here
